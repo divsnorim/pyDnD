@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cocojumbo',
+    'cocojumbo.apps.CocojumboConfig',
+    'skibidi_app.apps.SkibidiAppConfig',
 ]
 
 MIDDLEWARE = [
