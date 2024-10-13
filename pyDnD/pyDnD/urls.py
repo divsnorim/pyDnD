@@ -1,8 +1,9 @@
-
 from django.urls import path, include
-from cocojumbo.views import index
+
+from skibidi_app.views import pageNotFound
 
 urlpatterns = [
-    path('', index, name='home'),
-    path('haze_part/', include('skibidi_app.urls'))
+    path('', include('skibidi_app.urls'))
 ]
+
+handler404 = pageNotFound
